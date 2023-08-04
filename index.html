@@ -2,78 +2,366 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeliciousBites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
 
+  <style type="text/css">
+    .sidebar-right li .submenu-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .sidebar-right .nav-link {
+      font-weight: 500;
+      color: var(--bs-dark);
+    }
+
+    .sidebar-right .nav-link:hover {
+      color: var(#f15b2b) !important;
+    }
+
+    .row-item {
+      --bs-gutter-x: 0.5rem;
+      --bs-gutter-y: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: calc(var(--bs-gutter-y) * -1);
+      margin-right: calc(var(--bs-gutter-x)/ -2);
+      margin-left: calc(var(--bs-gutter-x)/ -2);
+      height: 2.5rem;
+    }
+
+    .navbar-brand {
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+    }
+  </style>
 </head>
 
+
 <body>
-    
-    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-        Spice & Recipes 
-      </a>
-      
-      
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        
-          <div class="d-flex flex-column flex-shrink-0 p-3">
+  <header class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="img/logo.png" alt="logo" width="15%">
 
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-dark" aria-current="page">
-                    <i class="icon-camera-retro icon-large"> </i>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                    Dashboard
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                    Orders
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-                    Products
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-dark">
-                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                    Customers
-                  </a>
-                </li>
-              </ul>
-          </div>
-          
-        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item active mx-4">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+
+        </ul>
+
+
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-sign-in"
+            aria-hidden="true"></i> Sign in</button>
+
       </div>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section class="section-content py-3">
+      <div class="row">
+
+        <aside class="col-lg-3 my-2">
+
+          <!-- ============= COMPONENT ============== -->
+          <nav class="sidebar-right card py-2 mb-4">
+            <ul class="nav flex-column" id="nav_accordion">
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Spice &amp; Rice <i class="fa fa-angle-down	"></i> </a>
+              </li>
+              <hr>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#">
+                  Kebap <i class="fa fa-angle-down	"></i> </a>
+                <ul id="menu_item1" class="submenu-list collapse" data-bs-parent="#nav_accordion">
+                  <div class="row-item">
+                    <aside class="col-9 nav-item">
+                      <li class="nav-item"><a class="nav-link" href="#"> Kebap Box </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+                  <div class="row-item">
+                    <aside class="col-9">
+                      <li><a class="nav-link" href="#">
+                          Dürüm </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+                  <div class="row-item">
+                    <aside class="col-9">
+                      <li><a class="nav-link" href="#">
+                          Döner Kebap </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+
+                </ul>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#">
+                  Burger <i class="fa fa-angle-down	"></i> </a>
+                <ul id="menu_item2" class="submenu-list collapse" data-bs-parent="#nav_accordion">
+                  <div class="row-item">
+                    <aside class="col-9 nav-item">
+                      <li class="nav-item"><a class="nav-link" href="#">
+                          Cheeseburger </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+                  <div class="row-item">
+                    <aside class="col-9">
+                      <li><a class="nav-link" href="#">
+                          Chicken Burger </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+                  <div class="row-item">
+                    <aside class="col-9">
+                      <li><a class="nav-link" href="#">
+                          Bacon Burger </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+
+                </ul>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item3" href="#">
+                  Pizza <i class="fa fa-angle-down	"></i> </a>
+                <ul id="menu_item3" class="submenu-list collapse" data-bs-parent="#nav_accordion">
+                  <div class="row-item">
+                    <aside class="col-9 nav-item">
+                      <li class="nav-item"><a class="nav-link" href="#"> Pizza Margherita </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+                  <div class="row-item">
+                    <aside class="col-9">
+                      <li><a class="nav-link" href="#">
+                          American pizza </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+                  <div class="row-item">
+                    <aside class="col-9">
+                      <li><a class="nav-link" href="#">
+                          Pizza Salame </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+
+                </ul>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item4" href="#">
+                  Asian Kitchen <i class="fa fa-angle-down	"></i> </a>
+                <ul id="menu_item4" class="submenu-list collapse" data-bs-parent="#nav_accordion">
+                  <div class="row-item">
+                    <aside class="col-9 nav-item">
+                      <li class="nav-item"><a class="nav-link" href="#">
+                          Sushi </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+                  <div class="row-item">
+                    <aside class="col-9">
+                      <li><a class="nav-link" href="#">
+                          Noodle </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+                  <div class="row-item">
+                    <aside class="col-9">
+                      <li><a class="nav-link" href="#">
+                          Maki </a>
+                      </li>
+                    </aside>
+                    <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
+                  </div>
+
+                </ul>
+
+              </li>
+            </ul>
+          </nav>
+          <!-- ============= COMPONENT END// ============== -->
+        </aside>
+        <main class="col-lg-9">
+          <!--Welcome Text-->
+          <div class="container" id="Welcome-text">
+            <h2 class="text-center"> Welcome to Culinary Delights! </h2>
+            <h3 class="text-center"> Unleash Your Inner Chef with Our Exquisite Recipes </h3>
+            <p> Are you passionate about cooking or just love trying out new dishes? Look no further! Culinary Delights
+              is
+              your gateway to a world of culinary wonders. Whether you're a novice in the kitchen or a seasoned pro, our
+              collection of recipes will inspire and delight your taste buds.
+            </p>
+            <h4 class="text-center"> Why Choose Culinary Delights?</h4>
+            <p class="text-muted"> 🍽️ A Gastronomic Adventure: Embark on a gastronomic journey with our diverse range
+              of
+              recipes, curated to
+              satisfy all palates. <br>
+              🍍 Fresh & Seasonal Ingredients: We believe in the magic of fresh produce. Discover recipes that make the
+              most
+              of each season's bounty.
+              <br>
+              👩‍🍳 Expert Tips & Techniques: Learn from the best! Our recipes come with pro tips and techniques to help
+              you
+              hone your culinary skills.
+              <br>🌟 Share & Connect: Join our food-loving community, share your culinary creations, and connect with
+              fellow
+              food enthusiasts. <br>
+              📱 Easy Access: Access our recipes anytime, anywhere, on any device, making cooking convenient and
+              enjoyable. <br>
+
+              Join us on this flavorsome expedition and elevate your cooking to a whole new level!
+            </p>
+
+            <a href="https://bootstrap-menu.com/detail-sidebar-nav-collapse.html"
+              class="btn btn-success justify-content-center">
+              Start Cooking Now ➜</a>
+          </div>
+          <!--Kebap Categories-->
+          <!--Kebap Box-->
+        </main>
+      </div>
+    </section>
+
+  </div>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-        crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+    aria-controls="offcanvasExample">
+    Spice & Recipes
+  </a>
+
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="d-flex flex-column flex-shrink-0 p-3">
+
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark" aria-current="page">
+            <i class="icon-camera-retro icon-large"> </i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg class="bi me-2" width="16" height="16">
+              <use xlink:href="#speedometer2"></use>
+            </svg>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg class="bi me-2" width="16" height="16">
+              <use xlink:href="#table"></use>
+            </svg>
+            Orders
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg class="bi me-2" width="16" height="16">
+              <use xlink:href="#grid"></use>
+            </svg>
+            Products
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark">
+            <svg class="bi me-2" width="16" height="16">
+              <use xlink:href="#people-circle"></use>
+            </svg>
+            Customers
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
