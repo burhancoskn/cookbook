@@ -1,0 +1,28 @@
+
+var car = [];
+class Car {
+  constructor(id, show) {
+    this.id = id;
+    this.show = show;
+  }
+}
+
+car.push = new Car("kebab", false);
+
+
+clickedID
+pages.forEach( const item => {
+if(item.id === checkedID) {
+item.show = true;
+} else {
+item.show = false;
+})
+
+pages.forEach( const item => {
+if(item.show === true) {
+document.getElementbyId(item.id).display = "block"}else {
+    document.getElementbyId(item.id).display = "block"
+}
+
+
+

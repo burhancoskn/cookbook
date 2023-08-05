@@ -35,12 +35,19 @@
 .btn-outline-primary:hover {
   color: #fff;
   background-color: #f15b2b;
-  border-color: #f15b2b;
+  border-color: transparent !important;
 }
-
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #f15b2b;
+  border-color: transparent !important;
+}
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem #f15b2b;
+}
 .btn-outline-primary {
   color: #f15b2b;
-  border-color: #f15b2b;
+  border-color: transparent !important;
 }
 
 .navbar a {
