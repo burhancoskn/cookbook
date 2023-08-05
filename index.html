@@ -15,86 +15,260 @@
   <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+  <script>
+    function show(id) {
+      var x = document.getElementById(id);
 
-  <style type="text/css">
-    .sidebar-right li .submenu-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
+      document.getElementById("Welcome-text").style.display = "none"
+      switch (id) {
+        case "KebapBoxDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "DurumDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "DonerDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "CheeseBurgerDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "ChickenBurgerDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "BaconBurgerDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "MargheritaDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "AmericanDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "SalamiDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "SushiDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        case "NoodleDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          break;
+        case "MakiDiv":
+          x.style.display = "block";
+          document.getElementById("Welcome-text").style.display = "none"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
+          break;
+        default:
+          document.getElementById("Welcome-text").style.display = "block"
+          document.getElementById("KebapBoxDiv").style.display = "none"
+          document.getElementById("DurumDiv").style.display = "none"
+          document.getElementById("DonerDiv").style.display = "none"
+          document.getElementById("CheeseBurgerDiv").style.display = "none"
+          document.getElementById("ChickenBurgerDiv").style.display = "none"
+          document.getElementById("BaconBurgerDiv").style.display = "none"
+          document.getElementById("MargheritaDiv").style.display = "none"
+          document.getElementById("AmericanDiv").style.display = "none"
+          document.getElementById("SalamiDiv").style.display = "none"
+          document.getElementById("SushiDiv").style.display = "none"
+          document.getElementById("MakiDiv").style.display = "none"
+          document.getElementById("NoodleDiv").style.display = "none"
 
-    .sidebar-right .nav-link {
-      font-weight: 500;
-      color: var(--bs-dark);
+      }
     }
-
-    .sidebar-right .nav-link:hover {
-      color: var(#f15b2b) !important;
+    function hide(id) {
+      var x = document.getElementById(id);
+      if (x.style.display != "none") {
+        document.getElementById(id).style.display = "none"
+        document.getElementById("Welcome-text").style.display = "block"
+      }
     }
-
-    .row-item {
-      --bs-gutter-x: 0.5rem;
-      --bs-gutter-y: 0;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: calc(var(--bs-gutter-y) * -1);
-      margin-right: calc(var(--bs-gutter-x)/ -2);
-      margin-left: calc(var(--bs-gutter-x)/ -2);
-      height: 2.5rem;
-    }
-
-    .navbar-brand {
-      transform: translateX(-50%);
-      left: 50%;
-      position: absolute;
-    }
-  </style>
+  </script>
 </head>
-
-
 <body>
-  <header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <img src="img/logo.png" alt="logo" width="15%">
+  <header class="bg-opacity-10" style="      background-color: rgba(55, 10, 0, 0.94);">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+        <img src="img/logo.png" alt="logo" width="15%">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="	fa fa-bars"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ">
-          <li class="nav-item active mx-4">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-
-
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active mx-4">
+              <a class="nav-link" href="#" onclick="show('home')">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
 
 
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-sign-in"
-            aria-hidden="true"></i> Sign in</button>
+          </ul>
 
-      </div>
-    </nav>
+
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-sign-in"
+              aria-hidden="true"></i> Sign in</button>
+
+        </div>
+      </nav>
+    </div>
   </header>
-
   <div class="container">
-
     <section class="section-content py-3">
       <div class="row">
-
         <aside class="col-lg-3 my-2">
-
-          <!-- ============= COMPONENT ============== -->
-          <nav class="sidebar-right card py-2 mb-4">
+          <!-- ============= Sidebar ============== -->
+          <nav class="sidebar-right card py-2 mb-4 bg-opacity-10" style="background-color:rgb(248 232 229)">
             <ul class="nav flex-column" id="nav_accordion">
               <li class="nav-item">
                 <a class="nav-link" href="#"> Spice &amp; Rice <i class="fa fa-angle-down	"></i> </a>
@@ -106,14 +280,15 @@
                 <ul id="menu_item1" class="submenu-list collapse" data-bs-parent="#nav_accordion">
                   <div class="row-item">
                     <aside class="col-9 nav-item">
-                      <li class="nav-item"><a class="nav-link" href="#"> Kebap Box </a>
+                      <li class="nav-item"><a class="nav-link" href="#" id="KebapBox" onclick="show('KebapBoxDiv')">
+                          Kebap Box </a>
                       </li>
                     </aside>
                     <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
                   </div>
                   <div class="row-item">
                     <aside class="col-9">
-                      <li><a class="nav-link" href="#">
+                      <li><a class="nav-link" href="#" onclick="show('DurumDiv')">
                           Dürüm </a>
                       </li>
                     </aside>
@@ -121,7 +296,7 @@
                   </div>
                   <div class="row-item">
                     <aside class="col-9">
-                      <li><a class="nav-link" href="#">
+                      <li><a class="nav-link" href="#" onclick="show('DonerDiv')">
                           Döner Kebap </a>
                       </li>
                     </aside>
@@ -137,7 +312,7 @@
                 <ul id="menu_item2" class="submenu-list collapse" data-bs-parent="#nav_accordion">
                   <div class="row-item">
                     <aside class="col-9 nav-item">
-                      <li class="nav-item"><a class="nav-link" href="#">
+                      <li class="nav-item"><a class="nav-link" href="#" onclick="show('CheeseBurgerDiv')">
                           Cheeseburger </a>
                       </li>
                     </aside>
@@ -145,7 +320,7 @@
                   </div>
                   <div class="row-item">
                     <aside class="col-9">
-                      <li><a class="nav-link" href="#">
+                      <li><a class="nav-link" href="#" onclick="show('ChickenBurgerDiv')">
                           Chicken Burger </a>
                       </li>
                     </aside>
@@ -153,7 +328,7 @@
                   </div>
                   <div class="row-item">
                     <aside class="col-9">
-                      <li><a class="nav-link" href="#">
+                      <li><a class="nav-link" href="#" onclick="show('BaconBurgerDiv')">
                           Bacon Burger </a>
                       </li>
                     </aside>
@@ -169,14 +344,16 @@
                 <ul id="menu_item3" class="submenu-list collapse" data-bs-parent="#nav_accordion">
                   <div class="row-item">
                     <aside class="col-9 nav-item">
-                      <li class="nav-item"><a class="nav-link" href="#"> Pizza Margherita </a>
+                      <li class="nav-item"><a class="nav-link" href="#" onclick="show('MargheritaDiv')"> Pizza
+                          Margherita
+                        </a>
                       </li>
                     </aside>
                     <aside class="col-3 text-end align-self-center px-4"> <i class="fa fa-ellipsis-v"></i></aside>
                   </div>
                   <div class="row-item">
                     <aside class="col-9">
-                      <li><a class="nav-link" href="#">
+                      <li><a class="nav-link" href="#" onclick="show('AmericanDiv')">
                           American pizza </a>
                       </li>
                     </aside>
@@ -184,7 +361,7 @@
                   </div>
                   <div class="row-item">
                     <aside class="col-9">
-                      <li><a class="nav-link" href="#">
+                      <li><a class="nav-link" href="#" onclick="show('SalamiDiv')">
                           Pizza Salame </a>
                       </li>
                     </aside>
@@ -200,7 +377,7 @@
                 <ul id="menu_item4" class="submenu-list collapse" data-bs-parent="#nav_accordion">
                   <div class="row-item">
                     <aside class="col-9 nav-item">
-                      <li class="nav-item"><a class="nav-link" href="#">
+                      <li class="nav-item"><a class="nav-link" href="#" onclick="show('SushiDiv')">
                           Sushi </a>
                       </li>
                     </aside>
@@ -208,7 +385,7 @@
                   </div>
                   <div class="row-item">
                     <aside class="col-9">
-                      <li><a class="nav-link" href="#">
+                      <li><a class="nav-link" href="#" onclick="show('NoodleDiv')">
                           Noodle </a>
                       </li>
                     </aside>
@@ -216,7 +393,7 @@
                   </div>
                   <div class="row-item">
                     <aside class="col-9">
-                      <li><a class="nav-link" href="#">
+                      <li><a class="nav-link" href="#" onclick="show('MakiDiv')">
                           Maki </a>
                       </li>
                     </aside>
@@ -228,19 +405,18 @@
               </li>
             </ul>
           </nav>
-          <!-- ============= COMPONENT END// ============== -->
         </aside>
         <main class="col-lg-9">
           <!--Welcome Text-->
           <div class="container" id="Welcome-text">
-            <h2 class="text-center"> Welcome to Culinary Delights! </h2>
-            <h3 class="text-center"> Unleash Your Inner Chef with Our Exquisite Recipes </h3>
+            <h2 class="text-center my-4"> Welcome to Culinary Delights! </h2>
+            <h3 class="text-center my-3"> Unleash Your Inner Chef with Our Exquisite Recipes </h3>
             <p> Are you passionate about cooking or just love trying out new dishes? Look no further! Culinary Delights
               is
               your gateway to a world of culinary wonders. Whether you're a novice in the kitchen or a seasoned pro, our
               collection of recipes will inspire and delight your taste buds.
             </p>
-            <h4 class="text-center"> Why Choose Culinary Delights?</h4>
+            <h4 class="text-center my-3"> Why Choose Culinary Delights?</h4>
             <p class="text-muted"> 🍽️ A Gastronomic Adventure: Embark on a gastronomic journey with our diverse range
               of
               recipes, curated to
@@ -262,98 +438,508 @@
             </p>
 
             <a href="https://bootstrap-menu.com/detail-sidebar-nav-collapse.html"
-              class="btn btn-success justify-content-center">
+              class="btn justify-content-center text-white" style="background-color: #8C1B24;">
               Start Cooking Now ➜</a>
           </div>
           <!--Kebap Categories-->
           <!--Kebap Box-->
-          di
+          <div class="container" id="KebapBoxDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3">Kebap Box</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/kebapbox.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun </th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('KebapBoxDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <!--Kebab Box -->
+          <!--Dürüm -->
+          <div class="container" id="DurumDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Dürüm</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/durum.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('DurumDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Dürüm -->
+          <!--Döner Kebap -->
+          <div class="container" id="DonerDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Döner Kebap</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/Doener.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('DonerDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Döner Kebap -->
+          <!--Cheese Burger -->
+          <div class="container" id="CheeseBurgerDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Cheese Burger</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/CheeseBurger.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('CheeseBurgerDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Cheese Burger -->
+          <!--Chicken Burger -->
+          <div class="container" id="ChickenBurgerDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Chicken Burger</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/ChickenBurger.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('ChickenBurgerDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Chicken Burger -->
+          <!--Bacon Burger -->
+          <div class="container" id="BaconBurgerDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Bacon Burger</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/BaconBurger.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('BaconBurgerDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Bacon Burger -->
+          <!--Margherita Pizza -->
+          <div class="container" id="MargheritaDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Pizza Margherita</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/margeritapizza.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('MargheritaDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Margherita Pizza -->
+          <!--American Pizza -->
+          <div class="container" id="AmericanDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> American Pizza</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/americanpizza.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('AmericanDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--American Pizza -->
+          <!--Salame Pizza -->
+          <div class="container" id="SalamiDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Pizza Salame</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/salami.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('SalamiDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Salami Pizza -->
+          <!--Sushi  -->
+          <div class="container" id="SushiDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Sushi</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/sushi.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('SushiDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Sushi  -->
+          <!--Noodle  -->
+          <div class="container" id="NoodleDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Noodle</h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/nudeln.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('NoodleDiv')"> <i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Noodle  -->
+          <!--Maki  -->
+          <div class="container" id="MakiDiv" style="display: none;">
+            <div class="content">
+              <h1 class="text-center my-4 px-3"> Maki </h1>
+              <hr class="solid">
+              <P class="lead text-center my-4 px-3">A blend of sweet and sour with hot and spicy</P>
+              <div class="text-center">
+                <img src="img/maki.jpg" alt="Meal" class="img-thumbnail">
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <table class="table my-md-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">Burhan Coskun</th>
+                      <td scope="col">Total</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sauce for one stir-fry recipe</td>
+                      <td>5 mins </td>
+                    </tr>
+
+
+
+                  </tbody>
+                </table>
+                <div class="text-end py-4 mx-4">
+                  <button class="btn justify-content-center text-white" style="background-color: #8C1B24;"
+                    onclick="hide('MakiDiv')"><i class="	fa fa-close"
+                    aria-hidden="true"></i> Hide</button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Maki  -->
         </main>
       </div>
     </section>
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-    aria-controls="offcanvasExample">
-    Spice & Recipes
-  </a>
-
-
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-
-    <div class="d-flex flex-column flex-shrink-0 p-3">
-
-      <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item">
-          <a href="#" class="nav-link text-dark" aria-current="page">
-            <i class="icon-camera-retro icon-large"> </i>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href="#speedometer2"></use>
-            </svg>
-            Dashboard
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href="#table"></use>
-            </svg>
-            Orders
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href="#grid"></use>
-            </svg>
-            Products
-          </a>
-        </li>
-        <li>
-          <a href="#" class="nav-link text-dark">
-            <svg class="bi me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            Customers
-          </a>
-        </li>
-      </ul>
-    </div>
-
   </div>
   </div>
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
