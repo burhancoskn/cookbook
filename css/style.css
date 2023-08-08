@@ -37,14 +37,20 @@
   background-color: #f15b2b;
   border-color: transparent !important;
 }
-.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
   color: #fff;
   background-color: #f15b2b;
   border-color: transparent !important;
 }
-.btn-outline-primary.focus, .btn-outline-primary:focus {
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
   box-shadow: 0 0 0 0.2rem #f15b2b;
 }
+
 .btn-outline-primary {
   color: #f15b2b;
   border-color: transparent !important;
@@ -57,4 +63,50 @@
 
 body {
   background-color: rgb(255 240 237);
+}
+
+.sidebar-right li .submenu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sidebar-right .nav-link {
+  font-weight: 500;
+  color: var(--bs-dark);
+}
+
+.sidebar-right .nav-link:hover {
+  color: var(#f15b2b) !important;
+}
+
+.row-item {
+  --bs-gutter-x: 0.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+  height: 2.5rem;
+}
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+
+/* DEMO example styles for logo image */
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding: 7px 14px;
 }
